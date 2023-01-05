@@ -17,7 +17,7 @@ cd www
 
 # modify the allowed hosts, adding the IP address of the server
 curl -O https://raw.githubusercontent.com/adgedenkers/django_scripts/main/configure_settings.py
-python configure_settings.py
+python configure_settings.py "$ip"
 
 # setup and activate the python virtual environment
 python -m venv venv
