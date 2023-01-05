@@ -1,5 +1,10 @@
+import sys
+
+for i in range(1, len(sys.argv)):
+    ip = sys.argv[i]
+
 search_text = "ALLOWED_HOSTS = []"
-replace_text = "ALLOWED_HOSTS = ['18.215.211.25']"
+replace_text = "ALLOWED_HOSTS = ['{}']".format(ip)
 
 with open(r'/home/ubuntu/projects/www/django_app/settings.py', 'r') as file:
     data = file.read()
