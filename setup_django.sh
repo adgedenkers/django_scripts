@@ -1,17 +1,33 @@
+echo "This script will setup Django on Ubuntu"
+echo "----------------------------------------------"
+echo "author:  Adge Denkers / adge.denkers@gmail.com"
+echo "updated: 2023-01-06"
+echo "----------------------------------------------"
+echo ""
+echo "Please enter the IP address:"
+read ip
+#ip="18.215.211.25"
+
+# switch to user directory
 cd ~
 
-ip="18.215.211.25"
-
+# update software repositories
 sudo apt update
+
+# install python3 and django
 sudo apt install python3-pip python3-venv -y
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 sudo apt install python3-django -y
 
-mkdir projects
+# create a projects directory
+mkdir projects || echo "projects directory already exists"
+
 cd projects
 
+# setup a new django project
 django-admin startproject django_app
 
+# rename the root folder of the django_app to www
 mv django_app www
 cd www
 
