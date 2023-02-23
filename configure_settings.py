@@ -1,3 +1,7 @@
+# ----------------------------------------------
+# author:  Adge Denkers / adge.denkers@gmail.com
+# updated: 2023-01-06
+# ----------------------------------------------
 import sys
 
 for i in range(1, len(sys.argv)):
@@ -14,7 +18,6 @@ with open(r'/home/ubuntu/projects/www/django_app/settings.py', 'w') as file:
     file.write(data)
 
 # now replace the time zone info
-
 search_text = "TIME_ZONE = 'UTC'"
 replace_text = "TIME_ZONE = 'America/New_York'"
 
