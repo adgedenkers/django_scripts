@@ -1,7 +1,7 @@
 echo "This script will setup Django on Ubuntu"
 echo "----------------------------------------------"
 echo "author:  Adge Denkers / adge.denkers@gmail.com"
-echo "updated: 2023-01-06"
+echo "updated: 2023-02-23"
 echo "----------------------------------------------"
 echo ""
 #          _     
