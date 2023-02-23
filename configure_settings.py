@@ -4,10 +4,9 @@
 # ----------------------------------------------
 import sys
 
+# get the ip address from the command line as argument
 for i in range(1, len(sys.argv)):
     ip = sys.argv[i]
-
-
 
 with open(r'/home/ubuntu/projects/www/django_app/settings.py', 'r') as file:
     data = file.read()
